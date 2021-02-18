@@ -1,0 +1,89 @@
+# yorum satırı anlamına gelir.
+# str - string - sayısal olmayan veriler alır
+# int - integer - tam sayı tipinde veriler alır
+# float - ondalıklı / kesirli sayılar alır
+# bit - bool - boolean - True - False tipinde veri alır
+
+# int() parantez içine yazılan değeri tam sayı tipine çevirir
+# str() parantez içine yazılan değeri metinsel tipe çevirir
+# float() parantez içine yazılan değeri float tipine (ondalıklı sayı) çevirir
+
+a="hanifi"
+b=13
+c="13"
+d=20
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(a,b,c,d)
+print(a+c)
+print(b+d)
+#print(a+b) typeError hatası verir
+print(b+int(c))
+print(int(c))
+#print(int(a)) valueError hatası verir
+print(str(d)+a)
+
+
+
+
+isim="hanifi"
+ders="python"
+gun="salı"
+
+mesaj="Merhaba {}, {} dersiniz {} günü {} saatinde başlayacaktır. İyi dersler dileriz.".format(isim,ders,gun,"19:00")
+
+print(mesaj)
+
+print("Merhaba {}, {} dersiniz {} günü {} saatinde başlayacaktır. İyi dersler dileriz.".format(isim,ders,gun,"19:00"))
+
+
+
+
+# Python'da operatörler
+# Toplama operatörü
+t1=13
+t2=7
+t3=t1+t2
+print("Toplam değeri:",t3)
+
+# Çıkarma operatörü
+c1=13
+c2=5
+c3=c1-c2
+print("Çıkarma değeri:{}".format(c3))
+
+# Çarpma operatörü
+ca1=2
+ca2=8
+ca3=ca1*ca2
+print("Çarpma değeri:",ca3)
+
+# Bölme operatörü
+b1=25
+b2=5
+b3=b1/b2
+print("Bölme değeri:{}".format(b3))
+print(type(b3)) # Python'da bölme işleminin sonucu her zaman float tipindedir
+
+# Tam bölme operatörü
+tb1=25
+tb2=7
+tb3=tb1//tb2
+print("Tam bölme değeri:",tb3)
+
+# Kalan bulma / mod alma operatörü
+k1=25
+k2=7
+k3=k1%k2
+print("Kalan değeri:",k3)
+
+# Üs alma operatörü
+u1=2
+u2=8
+u3=u1**u2
+print("Üs değeri:",u3)
