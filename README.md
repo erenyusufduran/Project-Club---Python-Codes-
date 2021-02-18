@@ -1,0 +1,1 @@
+# Proje-Kul-b-Python-E-itimi
