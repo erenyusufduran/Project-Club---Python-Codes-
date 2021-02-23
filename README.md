@@ -1,1 +1,1 @@
-Bu kodlar Beykent Üniversitesi Proje Üretim, Yönetim ve Geliştirme Kulübü'nün verdiği 3 günlük python eğitiminin kodlarıdır.
+Bu kodlar Beykent Üniversitesi Proje Üretim, Yönetim ve Geliştirme Kulübü'nün verdiği 4 günlük python eğitiminin kodlarıdır.
