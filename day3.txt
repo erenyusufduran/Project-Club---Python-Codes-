@@ -1,0 +1,102 @@
+a=1
+
+while a<5:
+    print(a)
+    a=a+1
+
+ogrenciSayisi=3
+
+while ogrenciSayisi>0:
+    isim=input("Öğrencinin adını giriniz:")
+    not1=int(input("1. notunu giriniz:"))
+    not2=int(input("2. notunu giriniz:"))
+   
+    ortalama=(not1+not2)/2
+   
+    print(ortalama)
+   
+    ogrenciSayisi=ogrenciSayisi-1
+
+
+
+
+ogrenciSayisi=int(input("Kaç öğrenci için ortalama hesaplamak istersiniz? "))
+
+while ogrenciSayisi>0:
+    isim=input("Öğrencinin adını giriniz:")
+    not1=int(input("1. notunu giriniz:"))
+    not2=int(input("2. notunu giriniz:"))
+   
+    ortalama=(not1+not2)/2
+   
+    print(ortalama)
+   
+    ogrenciSayisi=ogrenciSayisi-1
+
+
+
+
+#import random
+from random import randint
+
+#bilgisayarinTuttuguSayi=random.randint(1,100)
+bilgisayarinTuttuguSayi=randint(1,100)
+#print(bilgisayarinTuttuguSayi)
+denemeSayisi=0
+while True:
+  denemeSayisi+=1
+  benimTahminEttigimSayi=int(input("Tuttuğum sayıyı tahin et:"))
+
+  if bilgisayarinTuttuguSayi==benimTahminEttigimSayi:
+    print("Tebrik ederim, {} denemede bildin".format(denemeSayisi))
+    break
+  elif bilgisayarinTuttuguSayi>benimTahminEttigimSayi:
+    print("Daha büyük sayı dene")
+  else:
+    print("Daha küçük sayı dene")
+
+
+
+
+import random
+enKucukDeger=1
+enBuyukDeger=100
+while True:
+  print("{} - {}".format(enKucukDeger,enBuyukDeger))
+  bilgisayarinTahminEttigiSayi=random.randint(enKucukDeger,enBuyukDeger)
+
+  cevap=input("{} tuttuğun sayı olabilir mi? [e]vet/ daha [b]üyük dene / daha [k]üçük dene : ".format(bilgisayarinTahminEttigiSayi))
+
+  if cevap=="e":
+    print("Oley bildim")
+    break
+  elif cevap=="b":
+    print("daha büyük denemeliyim")
+    enKucukDeger=bilgisayarinTahminEttigiSayi+1
+  else:
+    print("daha küçük denemeliyim")
+    enBuyukDeger=bilgisayarinTahminEttigiSayi-1
+
+
+
+
+
+# Python'da Döngüler - for
+
+isim="hanifi"
+
+#for i in range(10): # 0'dan 10'a kadar (10 dahil değil) i değerini 1'er arttır
+#for i in range(3,10): #3'den 10'a kadar (10 dahil değil) i değerini 1'er arttır
+#for i in range(3,30,4): # 3'den 30'a kadar(30 dagil değil) i değerini 4'er arttır
+for i in isim:
+  print(i)
+ 
+ 
+   
+
+
+for i in range(1,10):
+  for j in range(1,10):
+    print("{} x {} = {}".format(i,j,i*j))
+  print("-----")
+
