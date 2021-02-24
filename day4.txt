@@ -1,0 +1,97 @@
+# Python'da listeler - diziler
+"""
+gun1="pazartesi"
+gun2="salı"
+gun3="çarşamba"
+
+gunler=["pazartesi","salı","çarşamba","perşembe","cuma","cumartesi","pazar"]
+
+
+
+print(gunler)
+print(gunler[0])
+print(gunler[3])
+print(len(gunler))
+elemanSayisi=len(gunler)
+print(gunler[elemanSayisi-1])
+
+print(gunler[-1]) # son elemanı verir
+print(gunler[-2]) # sondan bir önceki elemanı verir
+print(gunler[0:3])
+print(gunler[2:4])
+print(gunler[:3])
+print(gunler[::-1]) # diziyi tersten ekrana yazar
+print(gunler[-2:]) # dizinin son 2 elemanını ekrana yazar
+"""
+
+"""
+haftaici=["pazartesi","salı","çarşamba","perşembe","cuma"]
+haftasonu=["cumartesi","pazar"]
+
+g1=haftaici+haftasonu
+print(g1)
+print(g1[3])
+g2=[haftaici,haftasonu]
+print(g2)
+print(g2[0][3])
+print(g2[1][0])
+"""
+
+
+"""
+ogr1=["hanifi","çetinkaya",1987,[70,60,40]]
+ogr2=["yusuf","şen",2000,[100,90,50]]
+
+mesaj="{} {} öğrencisine ait not ortalaması {}".format(ogr1[0],ogr1[1],sum(ogr1[3])//3)
+print(mesaj)
+
+"""
+
+sayilar=[1,10,5,6,14,13,9]
+harfler=["a","g","s","h","y","f"]
+print(min(sayilar))
+print(max(sayilar))
+print(min(harfler))
+print(max(harfler))
+
+sayilar.append(49) # listenin sonuna parantez içindeki değeri ekler
+sayilar.insert(3,39) # 3 elemanandan sonra diğer parametreyi ekler
+sayilar.insert(-1,15) # # son elemandan önce diğer parametreyi ekler
+sayilar.pop() # son elemanı siler
+sayilar.pop(0) # ilk elemanı siler
+sayilar.remove(10) # yazılan değeri bulup siler
+say=len(sayilar) # dizideki eleman sayısını verir
+index=sayilar.index(5) # seçili elemanın index numarasını verir.
+sayilar.sort() # küçükten büyüğe sıralama yapar
+sayilar.reverse() # listeyi tersten sıralar
+
+sayilar[2]=99 # dizinin 2. elemanını yeni değer ile değiştirir
+
+
+
+
+
+
+
+
+___________________________________
+# Proje: Bilgisayarın rastgele ürettiği iki sayı ve işlemin sonucunu kullanıcıya soran uygulamayı kodlayınız.
+
+print("Zorluk seviyesini seçiniz")
+print("1. seviye")
+print("2. seviye")
+print("3. seviye")
+zorluk=input("Seçiniz:")
+
+
+sayi1=13 # rastgele seçilecek
+sayi2=15 # rastgele seçilecek
+islem="+" # rastgele seçilecek
+sonuc=sayi1+sayi2
+
+cevap=int(input("{}{}{}=? işleminin sonucu kaçtır?".format(sayi1,islem,sayi2)))
+
+if cevap==sonuc:
+  print("Tebrikler, bildin!")
+else:
+  print("Bilemedin")
